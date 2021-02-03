@@ -4,6 +4,13 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
+- type: directory
+  path: ''
+  label: Sidebar
+  create: all
+  match: "**/*"
+  templates:
+  - info-page
 - type: heading
   label: Content
 - type: directory
@@ -27,7 +34,7 @@ sections:
 upload_dir: static
 public_path: ''
 front_matter_path: ''
-use_front_matter_path: false
+use_front_matter_path: true
 file_template: ":filename:"
 build:
   preview_output_directory: ".nuxt"
