@@ -1,5 +1,5 @@
 ---
-new_page_extension: html
+new_page_extension: md
 auto_deploy: false
 admin_path: ''
 webhook_url: 
@@ -7,10 +7,8 @@ sections:
 - type: directory
   path: ''
   label: Sidebar
-  create: all
+  create: documents
   match: "**/*"
-  templates:
-  - info-page
 - type: heading
   label: Content
 - type: directory
